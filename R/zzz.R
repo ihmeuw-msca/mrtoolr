@@ -19,7 +19,7 @@ mrtool <- NULL
     for (nm in names(mrtool)) assign(nm, mrtool[[nm]], parent.env(environment()))
   } else {
     warning(paste0(
-      "To install Python dependencies for the mrtoolr package, please do: \n",
+      'To install Python dependencies for the mrtoolr package, please do: \n',
       'source("https://raw.githubusercontent.com/ihmeuw-msca/mrtoolr/main/install/python_dependencies.R")'
     ))
   }

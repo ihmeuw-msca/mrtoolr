@@ -55,3 +55,9 @@ if (!dir.exists(reticulate::miniconda_path())) {
 }
 
 install_mrtool_python()
+
+cat(paste0(
+  "\nTo have access to the mrtoolr R functions, restart the session \n",
+  "with Session --> Restart R, or [Ctrl/Cmd + Shift + F10], and do: \n",
+  "library(mrtoolr)"
+))
