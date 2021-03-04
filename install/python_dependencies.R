@@ -31,6 +31,7 @@ install_mrtool_python <- function(tag = "v0.0.1") {
     system(cmd_mrtool)
 
     if (!py_module_available("dataclasses")) conda_install(packages = "dataclasses")
+    if (!py_module_available("dill")) conda_install(packages = "dill")
     if (!py_module_available("cyipopt")) conda_install(packages = "cyipopt", forge = TRUE)
     if (!py_module_available("pycddlib")) py_install(packages = "pycddlib", pip = TRUE)
 

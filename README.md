@@ -9,3 +9,5 @@ to access the RStudio Server session.
 4. In the R interpreter, run `source("https://raw.githubusercontent.com/ihmeuw-msca/mrtoolr/main/install/python_dependencies.R")`. This will install Miniconda, libgmp3-dev, the required Python modules and the `mrtoolr` R package.
 5. Refresh the R session with "Session --> Restart R" or [Ctrl/Command + Shift + F10].
 6. Run `library(mrtool)`.
+
+Code examples with simulated data can be found here: https://rpubs.com/rsoren/mrbrt_examples_gbd2020.
