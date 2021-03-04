@@ -1,6 +1,6 @@
 ## mrtoolr
 
-`mrtoolr` is an R package that mirrors the Python-based `mrtool` package (https://github.com/ihmeuw-msca/mrtool). Use the follow instructions to install `mrtoolr` and its Python dependencies in a Docker image:
+`mrtoolr` is an R package that mirrors the Python-based `mrtool` package (https://github.com/ihmeuw-msca/mrtool). Use the following instructions to install `mrtoolr` and its Python dependencies in a Docker image:
 
 1. Install Docker from https://www.docker.com/products/docker-desktop.
 2. On the command line, do: `docker run --rm -p 8787:8787 -e ROOT=TRUE -e PASSWORD=dockpass rocker/rstudio`.
