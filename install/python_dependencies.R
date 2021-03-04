@@ -1,5 +1,5 @@
 #
-# install_python_dependencies.R
+# python_dependencies.R
 #
 # Reed Sorensen
 # March 2021
@@ -55,6 +55,9 @@ if (!dir.exists(reticulate::miniconda_path())) {
 }
 
 install_mrtool_python()
+install.packages("remotes")
+library(remotes)
+remotes::install_github("ihmeuw-msca/mrtoolr")
 
 cat(paste0(
   "\nTo have access to the mrtoolr R functions, restart the session \n",
