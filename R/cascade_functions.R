@@ -138,7 +138,7 @@ run_spline_cascade <- function(
     n_betas_after <- length(is_spline) - which(is_spline)
     is_spline_beta <- (n_betas_before+1):(length(model_object$beta_soln)-n_betas_after)
 
-    stdevs_tmp <- apply(X = core$other_sampling$sample_simple_lme_beta(
+    stdevs_tmp <- apply(X = mrtoolr::core$other_sampling$sample_simple_lme_beta(
       sample_size = 1000L, model = model_object
     ), MARGIN = 2, FUN = sd)
 
