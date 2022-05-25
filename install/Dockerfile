@@ -11,7 +11,7 @@ SHELL ["conda", "run", "-n", "mrtool-0.0.1", "/bin/bash", "-c"]
 
 # install all python dependencies
 RUN pip install dill numpy scipy matplotlib pandas xarray && \
-    conda install -c conda-forge cyipopt -y && \
+    conda install -c conda-forge cyipopt=0.3.0 -y && \
     pip install pycddlib xspline && \
     pip install git+https://github.com/zhengp0/limetr.git@master && \
     pip install git+https://github.com/ihmeuw-msca/mrtool.git@v0.0.1
